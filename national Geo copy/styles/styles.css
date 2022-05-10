@@ -1,0 +1,117 @@
+/* global */
+:root{
+    --primary: #ffcc00;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* this is imported google fonts directly  to styles */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,100;1,300&family=Roboto+Slab&display=swap');
+
+
+
+body{
+    background-color: black;
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+
+img{
+    max-width: 100%;
+}
+
+/* under line of nav ancor links */
+a{
+    text-decoration: none;
+}
+
+
+/* utilities */
+
+
+
+/* menu */
+nav.menu{
+    height: 40px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav.menu img{
+    height: 30px;
+    padding-left: 20px;
+}
+
+
+
+/* this hides the following  ancor tags */
+.link-glass, .link-renew, .link-menu, .logo{
+    display: none;
+}
+
+.link-login{
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 4px;
+    font-size: 14px;
+    color: black;
+}
+
+.link-sub{
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 4px;
+    font-size: 12px;
+    padding: 17px;
+}
+
+/* this needs to change from black to yellow */
+.link-sub:hover{
+    background-color: var(--primary);
+    color: black;
+    transition-duration: .5s;
+}
+
+.link-angles{
+    color: black;
+}
+
+/* ????? look into it */
+nav.menu a:last-of-Type{
+    margin-right: 30px;
+}
+
+header{
+    text-align: center;
+    height: 230px;
+
+}
+
+header span{
+    border-bottom: 2px solid var(--primary);
+    
+}
+
+/* this transitions header subscribe */
+header span:hover {
+    background-color: var(--primary);
+    color: black;
+    cursor: pointer;
+    transition-duration: .5s;
+}
+
+
+header .bottom_lie{
+    background-color: var(--primary);
+    height: 4px;
+    line-height: 0;
+    margin: 21px auto 0;
+    width: 30px;
+}
